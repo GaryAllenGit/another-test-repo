@@ -80,6 +80,22 @@ git commit -m "Updated the file of commands again.  Should be finished now"
 git push origin master
 
 
+#decided to do some more tests, so created new branch on github called 'a-new-test-branch'
+git pull
+git checkout a-new-test-branch
+git branch
+
+#also set username with:
+git config user.name "GaryAllenGit"
+
+#edit this file some more, then save it, stage it, 
+#   commit it, push it, then pull and merge it on github, 
+#   and delete the branch again (phew!)
+git add git-instructions.txt
+git commit -m "Updated the file of commands one more time.  Really should be finished now"
+git push origin a-new-test-branch
+
+
 
 
 

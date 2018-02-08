@@ -61,13 +61,21 @@ git log
 
 #(remembering that this file has been built up as I went along):
 #   now save the final changes to this file
+#   add the file to the branch (as we're now on master branch,
+#      and the file was only staged for the 'first-test-branch'
 #   commit the changes again
 #   push the master (as we're back on that branch) to github
 #   check if any pull request is necessary, but as this is the master branch I doubt it
-git commit -m "Updated the file of command for this test"
+git add git-instructions.txt
+git commit -m "Updated the file of commands for this test"
 git push origin master
 
+#checked and the master does not need pull request (because it's the master, presumably)
 
+#have made some more changes to this file, so save them again
+#  commit them and push them
+git commit -m "Updated the file of commands again.  Should be finished now"
+git push origin master
 
 
 

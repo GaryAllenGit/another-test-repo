@@ -1,0 +1,38 @@
+# initialise a repo
+git init
+
+#create a file
+touch testfile.txt
+
+#edit it
+vi testfile.txt
+
+#check it 
+git status
+
+#stage it
+git add testfile.txt 
+
+#check it again
+git status
+
+#commit all changes
+git commit -m "First commit to this test project"
+
+#create a branch
+git checkout -b first-test-branch
+
+#check it 
+git status
+git branch
+
+#AFTER creating a repo on github (via web), link this repo to it
+git remote add origin https://github.com/GaryAllenGit/another-test-repo.git
+
+#push the master branch onto github
+git push -u origin master
+
+#push the 'first-test-branch' onto github
+git push origin first-test-branch
+
+#save THIS file into the project folder, calling it git-instructions.txt

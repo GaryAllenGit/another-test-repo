@@ -36,3 +36,40 @@ git push -u origin master
 git push origin first-test-branch
 
 #save THIS file into the project folder, calling it git-instructions.txt
+# now stage it
+git add git-instructions.txt
+
+#commit it
+git commit -m "Added file of commands for this test"
+
+#push these changes
+git push origin first-test-branch 
+
+#go to github and create pull request for the branch
+#then merge the changes into master
+#and delete the branch (on github)
+
+#pull the changes from github back to the local repo
+git pull origin master
+
+#switch back to master branch
+git checkout master
+git pull
+
+#view log of changes
+git log
+
+#(remembering that this file has been built up as I went along):
+#   now save the final changes to this file
+#   commit the changes again
+#   push the master (as we're back on that branch) to github
+#   check if any pull request is necessary, but as this is the master branch I doubt it
+git commit -m "Updated the file of command for this test"
+git push origin master
+
+
+
+
+
+
+

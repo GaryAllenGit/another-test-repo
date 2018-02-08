@@ -73,7 +73,9 @@ git push origin master
 #checked and the master does not need pull request (because it's the master, presumably)
 
 #have made some more changes to this file, so save them again
-#  commit them and push them
+#  stage them, commit them, and push them
+#  does seem a bit odd having to stage ("add") this file every time...
+git add git-instructions.txt
 git commit -m "Updated the file of commands again.  Should be finished now"
 git push origin master
 
